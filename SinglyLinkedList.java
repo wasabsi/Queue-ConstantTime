@@ -4,7 +4,6 @@ package edu.cofc.csci230;
 /**
  * Singly LinkedList Data Structure
  * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
  *
  * @param <AnyType>
  */
@@ -63,11 +62,7 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
      */
     private void addNode(int index, Node<AnyType> t) throws IndexOutOfBoundsException {
     	
-    	/**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
+    	
     	//Adds a node to desired index location
     	
     	//Checks if index entered is in range
@@ -119,11 +114,7 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
      */
     private void setNode( int index, Node<AnyType> t ) throws IndexOutOfBoundsException {
     	
-    	/**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
+  
     	
     	//Replaces node at index location
     	if(index >= 0 && index <= size-1){
@@ -173,11 +164,7 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
      */
     private Node<AnyType> removeNode( int index ) throws IndexOutOfBoundsException {
          
-        /**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
+       
     	
     	//removes node at index entered index location
     	
@@ -228,11 +215,7 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
      */
     private Node<AnyType> getNode(int index) throws IndexOutOfBoundsException {
          
-        /**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
+     
     	
     	Node<AnyType> tempNode = headNode;
     	
@@ -273,17 +256,11 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
     } // end isEmpty() method
      
      
-    /**
-     * Removes all of the elements from this list.
-     * 
-     */
+    //Removes all of the elements from this list.
+    
     public void clear() {
          
-        /**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
+      
     	//clears all nodes
     	headNode = null;
     	size = 0;
@@ -300,11 +277,7 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
     
     public static void main( String[] args ) {
          
-        /**
-         * -------------------------------------------
-         * TODO: You put your test cases here
-         * 
-         */
+      
     	
     	SinglyLinkedList<Integer> test = new SinglyLinkedList<Integer>();
     	
